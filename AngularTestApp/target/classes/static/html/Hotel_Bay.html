@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+<script src= "https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
+<script src= "/js/Hotel_Bay.js"></script>
+<link rel= "stylesheet" href= "/css/Hotel_Bay.css" type="text/css"/>
+<title>Hotel Bay</title>
+</head>
+<body>
+<div ng-app= "myApp" class="container">
+<div class="top">
+<div class="headerLeft"> 
+<h1> Welcome To Hotel Bay</h1>
+</div>
+<div class="headerRight">
+<button><a href="#!home"> Home</a></button>
+<button><a href="#!location">Location</a> </button>
+<button><a href="#!accomodation"> Accommodation </a></button> 
+<button><a href="#!reservationForm"> Booking </a> </button>
+<button><a href="#!contactUs"> Contact Us </a> </button>
+</div>
+</div>
+<div class= "slider"></div>
+<div class= "view"> <ng-view></ng-view> </div>
+</div>
+</body>
+</html>
+
+

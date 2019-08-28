@@ -1,0 +1,40 @@
+ 
+
+ .top:after 
+{
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+ .left 
+ {
+  float: left;
+  height: 250px;
+  width: 400px;
+ text-align:center;
+ }
+ .right
+ {
+   float: left;
+  height: 250px;
+  width: 840px; 
+   margin-left:10px;
+   font-size:15px;
+   font-family:"Sans-serif";
+ }
+ 
+ img
+ {
+ height:200px;
+ width:300px;
+ border-radius:20px;
+ }
+ .spot
+ {
+ margin-left:350px;
+ font-size:15px;
+   font-family:"Sans-serif";
+ }
+ 

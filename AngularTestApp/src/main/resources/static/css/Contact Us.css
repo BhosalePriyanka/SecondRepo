@@ -1,0 +1,34 @@
+body
+{
+font-size:15px;
+font-family:"Sans-serif";
+background-image: url(/Image/Image.jpg);
+}
+
+h1{text-align:center;}
+
+address
+{
+margin-left:100px;
+font-weight:bold;
+}
+h2
+{text-align:center;}
+
+
+fieldset
+{
+margin-left:375px;
+margin-right:375px;
+width:500px;
+padding:20px;
+float:left;
+border: solid 5px;
+border-radius:25px;
+font-weight:bold;
+}
+
+input{
+width:500px;
+ padding:3px;
+ margin-bottom:15px;}

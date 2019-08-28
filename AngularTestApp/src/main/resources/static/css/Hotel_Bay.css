@@ -1,0 +1,64 @@
+.top:after 
+{
+ content: "";
+ display: table;
+ clear: both;
+}
+.view
+{
+width:1250px;
+}
+.headerLeft
+{
+font-size:20px;
+float:left;
+width:415px;
+height:60px;
+text-align:center;
+font-style: italic;
+}
+.headerRight
+{
+font-size:20px;
+float:left;
+width:835px;
+height:60px;
+text-align:center;
+font-style: italic;
+}
+
+h1
+{
+margin-top:10px;
+} 
+button 
+{
+font-style: italic;
+font-size:15px;
+padding:5px;
+margin-top:10px;
+}
+.slider
+{
+	height : 300px;
+	width:750px;
+	margin: 10px 250px 10px 250px;
+	background : url(/Image/Image1.jpg);
+	animation:slide 20s infinite;
+}
+
+@keyframes slide {
+	25% {background : url(/Image/Image2.jpg);}
+	50% {background : url(/Image/Image3.jpg);}
+	100% {background : url(/Image/Image4.jpg);}
+}
+
+.container
+{
+width:1250px;
+}
+body
+{
+background-image: url(/Image/Image.jpg);
+}
+

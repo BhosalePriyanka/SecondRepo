@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head >
+  <title>MSPS</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body ng-app="MSPS">
+ <!--  <div ng-controller="idleCtrl">
+  <div style="position:absolute;top:200px;left:200px;border:1px solid red;" ng-if="warning">Testing</div></div> -->
+
+<nav ng-controller="navCtrl" class="navbar navbar-inverse navbar-fixed-top"  data-spy="affix" data-offset-top="5">
+  <!--<uitk-session-timeout model="model"></uitk-session-timeout>-->
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#/"><img src="images/logo-sm.png" style="width:180px;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">        
+        <li ng-class="{'active': path == '/service1' ||  path == '/service2'}"class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" >SERVICES
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#/softwareDvelopment">Software Development</a></li>
+            <li><a href="#/softwareConsultancy">Software Consultancy</a></li>
+            <!-- <li><a href="#/cloud">Bigdata & Cloud</a></li> -->
+            <li><a href="#/softwareSupport">Software Support</a></li>
+            <li><a href="#/infrastructureManagement">Infrastructure Management</a></li>
+            <!-- <li><a href="#/test">Test</a></li>--> 
+          </ul>
+        </li>
+        <li ng-class="{'active': path == '/about'}"><a href="#/about">ABOUT</a></li>
+        <li ng-class="{'active': path == '/careers'}"><a href="#/careers">CAREERS</a></li>
+        <li ng-class="{'active': path == '/clients'}"><a href="#/clients">CLIENTS</a></li>
+        <!-- <li ng-class="{'active': path == '/blog'}"><a href="#/blog">BLOG</a></li>  -->
+        <li ng-class="{'active': path == '/contactus'}"><a href="#/contactus">CONTACT US</a></li>
+      </ul>     
+    </div>
+  </div>
+</nav>
+  <div ng-view></div>
+ <footer>
+    <div class="upper-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-5 footer_logo_section">
+            <p>
+              <a href="#/" title="MSPS">
+                <img src="images/logo-sm.png" style="height:50px;">
+              </a>  
+            </p>  
+            <p>
+              MSPS Consultancy Limited,<br>
+The Pentagon Centre,<br>
+Suite 417,<br>
+36 Washington Street,<br>
+Glasgow,<br>
+G3 8AZ<br>
+            </p>  
+            <p>Phone: <span itemprop="telephone"><a href="tel:+443330220232">0044 141 2372500</a></span><br>  Email: <a href="mailto:enquiries@MSPS.com" data-concrete5-link-type="image">enquiries@msps-consultancy.com</a>  
+            </p>
+            <p>MSPS Ltd. is registered in Scotland.<br> Company number: SC456225<br></p>
+          </div>
+          <div class="col-sm-3 ccm-theme-grid-column">
+            <h5>Links</h5>      
+            <ul class="nav nav-stacked">
+              <li><a href="#/">Home</a></li>
+              <li><a href="#/softwareConsultancy">Services</a></li>
+              <li><a href="#/about">About</a></li>
+              <li><a href="#/clients">Clients</a></li>
+              <li><a href="#/careers">Careers</a></li>
+              <!-- <li><a href="#/blog">Blog</a></li>  -->
+              <li><a href="#/contactus">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- 
+          <div class="col-sm-4 ccm-theme-grid-column">
+            <h5>Keep up to Date</h5>         
+           <div class="social-sm-row"> 
+              <div><a target="_blank" href="https://www.facebook.com/MSPS" rel="" class="icon-set icon-sm-facebook"></a></div>
+              <div><a target="_blank" href="https://www.linkedin.com/company/MSPS" rel="" class="icon-set icon-sm-linkedin"></a></div>
+              <div><a target="_blank" href="https://twitter.com/MSPS" rel="" class="icon-set icon-sm-twitter"></a></div>
+              <div><a target="_blank" href="https://plus.google.com/+MSPS" rel="publisher" class="icon-set icon-sm-google-plus"></a></div>            
+          </div>
+          -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lower-footer">
+      © 2017 MSPS Consultancy Ltd. All rights reserved.         
+    </div>
+  </footer>
+  <script src="lib/jquery.min.js"></script>
+  <script src="lib/bootstrap.min.js"></script>
+  <script src="lib/angular.min.js"></script>
+  <script src="lib/angular-route.min.js"></script>
+  <script src="lib/angular-idle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

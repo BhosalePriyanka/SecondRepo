@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link  rel="stylesheet" href="/css/Reservation Form.css" type="text/css" />
+</head>
+<body>
+<h1> Advance Booking </h1>
+<form name = "studentForm">
+<fieldset >
+<legend> Personal Details </legend>
+<label> Mr </Label> 
+			<input class="mr" type="radio" name="Male"> 
+<label> Ms </label>
+			<input class="ms" type="radio" name="Female"> 
+<div class="row"> 
+<div class="column1"> FIRST NAME: </div>
+<div class="column2">
+		<input name = "firstname" type = "text" ng-model = "firstname" length = "5" required>
+		<span style = "color:red" ng-show = "studentForm.firstname.$untouched && studentForm.firstname.$invalid">
+		<span ng-show = "studentForm.firstname.$error.required">*</span>
+		</span>
+</div>
+</div>
+
+<div class="row">
+<div class = "column1"> LAST NAME: </div>
+<div class = "column2">
+		<input name = "lastname" type = "text" ng-model = "lastname" length = "5" required>
+		<span style = "color:red" ng-show = "studentForm.lastname.$untouched && studentForm.lastname.$invalid">
+		<span ng-show = "studentForm.lastname.$error.required">*</span>
+		</span>
+</div>
+</div>
+<div class="row">
+ <div class="column1"> EMAIL: </div>
+ <div class="column2">
+		 <input name = "email" type = "email" ng-model = "email" length = "100" required>
+		 <span style = "color:red" ng-show = "studentForm.email.$untouched && studentForm.email.$invalid">
+		 <span ng-show = "studentForm.email.$error.required">*</span>
+		 </span>
+		 <span style = "color:red" ng-show = "studentForm.email.$dirty && studentForm.email.$invalid">
+		<span ng-show = "studentForm.email.$error.email">Invalid Email-Id.</span>
+		</span>
+</div>
+</div>
+<div class="row">
+<div class="column1"> Type Of Rooms: </div> 
+<div class="column2">
+<input list="roomtype" name="roomtype" ng-model = "roomtype" required>
+				<span style = "color:red" ng-show = "studentForm.roomtype.$untouched && studentForm.roomtype.$invalid">
+				<span ng-show = "studentForm.roomtype.$error.required">*</span>
+				</span>
+		<datalist id="roomtype">
+		<option value="Single">
+		<option value="Double">
+		<option value="Extra Person">
+		</datalist> 
+</div>
+</div>
+
+<div class="row">
+ <div class="column1"> No of Rooms: </div>
+ <div class="column2">
+<input list="noofrooms" name="noofrooms" ng-model = "noofrooms" required> 
+
+<datalist id="noofrooms">
+<option value="1">
+<option value="2">
+<option value="3">
+<option value="4">
+<option value="5">
+</datalist>
+
+<span style = "color:red" ng-show = "studentForm.noofrooms.$untouched && studentForm.noofrooms.$invalid">
+<span style = "color:red" ng-show = "studentForm.noofrooms.$error.required">*</span>
+</span>
+</div>
+</div>
+
+<div class="row">
+<div class="column1"> Date:</div>
+<div class="column2">
+<input type="date" name="date" ng-model = "date" required> 
+<span style = "color:red" ng-show = "studentForm.date.$untouched && studentForm.date.$invalid">
+<span style = "color:red" ng-show = "studentForm.date.$error.required">*</span>
+</span>
+</div>
+</div>
+
+<button ng-disabled ="studentForm.firstname.$untouched && studentForm.firstname.$invalid || studentForm.lastname.$untouched && studentForm.lastname.$invalid || 
+studentForm.email.$untouched && studentForm.email.$invalid studentForm.roomtype.$untouched && studentForm.roomtype.$invalid || studentForm.noofrooms.$untouched && studentForm.noofrooms.$invalid ||
+studentForm.date.$untouched && studentForm.date.$invalid">SUBMIT</button> 
+</fieldset>
+</form> 
+</body>
+</html>

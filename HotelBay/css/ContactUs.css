@@ -1,0 +1,7 @@
+address{text-align:center;font-weight:bold;}
+fieldset{width:60%;margin-left:20%;font-weight:bold;border: solid 5px;border-radius:15px;}
+.row:after{display:table;content:"";clear:both;}
+.column1{width:20%;float:left;margin-top:15px;}
+.column2{width:70%;float:left;margin-top:15px;}
+input{width:600px;}
+button{font-weight:bold;font-size:18px;margin-left:30%;margin-top:2%;}

@@ -1,0 +1,7 @@
+img.main{border-radius:50px;text-align:center;width:1000px;height:400px;margin-left:275px;margin-right:275px;}
+.hotel:after{content:"";display: table;clear: both;margin:0px;padding:0px;}
+.room img {width:100%;height:auto;border-radius:25px;}
+.room figcaption {text-align:center;}
+.room{float:left;width:28%;margin-left:4%;height:auto;font-weight:bold;}
+.note{margin-left:300px;}
+table{margin:20px 29%;}

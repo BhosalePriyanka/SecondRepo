@@ -1,0 +1,34 @@
+<header class="header-img about">
+	<!-- <div class="banners">
+		<div class="banner-messages">
+			<div class="tp-caption slider-heading-gry">
+				<h1>Reliable and diligent<br>You are in safe hands</h1>
+			</div>
+			<div id="HTMLBlock25818" class="HTMLBlock">
+				<div class="tp-caption slider-desc">We will lead the project and keep it accurate, on time and within budget. </div>				
+				<p><a class="btn btn-default btn-orange" href="https://www.MSPS.com/services" title="Click to find out more" role="button">Our Services</a></p>			
+			</div>
+		</div>
+	</div>	 -->
+</header>
+<div class="row text-content">
+  
+        <div class="col-xs-12">
+            <h1>About MSPS</h1>
+            <h3>Some things to know about us</h3>
+            <p >MSPS is a tight-knit team building <span id="abt-span1"><a href="#">bespoke business software</a></span> in<span id="abt-span2"><a href="#">Glasgow.</a> </span> Some of us are experienced in the technical side of things, the actual work of designing and building software. Many of us are more focused on customer service or<span id="abt-span3"><a href="#"> business consultancy,</a></span> although we all need a degree of technical know-how in order to understand and guide the projects we work on. MSPS grew year-on-year during the recession, thanks to our loyal customers and talented software engineers.</p>
+            <p id="about-par1">We take on complex, demanding projects that others wonâ€™t: 25% of our work is on projects that were over-ambitious for the original development company and need to be rescued. Weâ€™re sector and software agnostic, which means that we work with clients from many different industries and don't limit our work to just one or two programming languages.</p>
+            <p id='about-par1'>Weâ€™ve built varied pieces of software: from online ticketing for major attractions, to the system that lets traffic signs talk to each other and their operators, to <span id="abt-apsn4"><a href="#"> e-learning systems for pilots.</a></span> Four out of five of our customers undertake more than one project with us, and most have been with us for five years or more. Weâ€™re trusted with some of the countryâ€™s most precious data - the NHS. Our visual learning and communication system has helped 40% more diabetes sufferers manage their condition.</p>
+            <h3 >Our potted history</h3>
+            <p >MSPS was founded over ten years ago in Glasgow by Iouri Prokhorov. With a background in computer science, Iouri had built and sold two successful software businesses before he created MSPS. He is driven by the knowledge that good <span id="abt-span5"><a href="#">software development</a></span> and infrastructure can transform a clientâ€™s business.</p>
+            <p >In 2004 Ian Guerit, an outstanding software engineer, joined MSPS. Since then Iouri and Ian have built a company rooted in technical excellence and a flair for really understanding what a client needs. MSPS is rich in experience, having worked on hundreds of projects for many different clients.</p>
+            <h3 >What we are proud of</h3>
+            <ul>
+                <li>We take personal responsibility for projects.</li>
+                <li>MSPS is full of independent thinkers.</li>
+                <li>We are informal and easy to talk to.</li>
+                <li>We care about <span id="abt-span6"><a href="#"> our clientsâ€™</a></span> business and take pride in doing the best possible job.</li>
+            </ul>
+        </div>
+  
+</div>

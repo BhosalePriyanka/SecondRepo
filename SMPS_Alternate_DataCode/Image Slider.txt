@@ -1,0 +1,130 @@
+//Image Slider
+//HTML
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/css/slider.css" type="text/css">
+</head>
+<!-- This code for image slider -->
+<body>
+<div class="slider">
+<input type="radio" name="image"  id="i1">
+<input type="radio" name="image"  id="i2">
+<input type="radio" name="image"  id="i3">
+
+<div class="image" id="one">
+<img src="/Image/1.jpg">
+<div class="caption"> Hi There!</div>
+<label for="i3" class="pre"></label>
+<label for="i2" class="nxt"></label>
+</div>
+<div class="image" id="two">
+<img src="/Image/2.jpg">
+<div class="caption"> Priyanka Here!</div>
+<label for="i1" class="pre"></label>
+<label for="i3" class="nxt"></label>
+</div>
+<div class="image" id="three">
+<img src="/Image/3.jpg">
+<div class="caption"> How are you?</div>
+<label for="i2" class="pre"></label>
+<label for="i1" class="nxt"></label>
+</div>
+<div class="nav">
+<label class="dots" id="dot1" for="i1"></label>
+<label class="dots" id="dot2" for="i2"></label>
+<label class="dots" id="dot3" for="i3"></label>
+</div>
+</div>
+</body>
+</html>
+
+
+
+//CSS
+
+
+/*This code for image slider*/
+
+.caption {
+  color: #ffffff;
+  padding: 8px 12px; 
+  position: absolute;
+  top:50%;
+  width: 100%;
+  text-align: center;
+}
+.slider{
+	margin:0 auto;
+	position: absolute;
+	width:100%;
+	overflow:hidden;
+	padding-bottom:25%;	
+}
+.image{
+	width:100%;
+	height:100%;
+	position:absolute;
+}
+.image img{
+	width:100%;
+	height:100%;
+}
+#i1,#i2,#i3{
+	display:none;
+}
+.nav{
+	width:100%;
+	height:11px;
+	bottom:20%;
+	position:absolute;
+	text-align:center;
+    z-index:99;
+}
+.dots:hover{
+	background:white;
+}
+.dots{
+	bottom:-80px;
+	width:15px;
+	height:15px;
+	margin:0 10px;
+	position:relative;
+	display:inline-block;
+	background:black;
+	border-radius:50%;
+}
+.pre, .nxt{
+	width:12%;
+	height:100%;
+	top:0;
+	cursor:pointer;
+	background:#408080;
+	position:absolute;
+}
+.pre{
+	left:0;
+}
+.nxt{
+	right:0;
+}
+.image{
+	z-index:-1 ;
+}
+#i1:checked ~ #one,
+#i2:checked ~ #two,
+#i3:checked ~ #three{
+	z-index:9;
+}
+#i1:checked ~ .nav #dot1,
+#i2:checked ~ .nav #dot2,
+#i3:checked ~ .nav #dot3{
+		z-index:9;
+} 
+................................................................
+.menubar .arrow:after{
+	content:'\203A';
+	float:right;
+	transform: rotate(90deg);
+}
+<i class="fas fa-sort-down" , style="float:right"></i>

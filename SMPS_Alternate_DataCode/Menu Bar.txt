@@ -1,0 +1,73 @@
+
+/*This code for menu bar*/
+
+<div class="header">
+<input type="checkbox" id="chk">
+<label for="chk" class="chk-btn">
+<i class="fas fa-bars"></i>
+</label>
+
+<div class="menubar">
+<ul> 
+<li> <a href="#!services"> SERVICES<i class="fas fa-sort-down" , style="float:right"></i></a>
+<ul>
+<li> <a href="#!softwaredevelopment"> Software Development </a> </li>
+<li> <a href="#!softwareconsultancy"> Software Consultancy </a> </li>
+<li> <a href="#!bigdataandcloud"> Bigdata And Cloud </a> </li>
+<li> <a href="#!softwaresupport"> Software Support </a> </li>
+<li> <a href="#!infrastructuremanagement"> Infrastructure Management </a> </li>
+</ul>
+</li>
+<li> <a href="#!home"> HOME </a> </li>
+<li> <a href="#!careers"> CAREERS </a> </li>
+<li> <a href="#!clients"> CLIENTS </a> </li> 
+<li> <a href="#!blog"> BLOG </a> </li>
+<li> <a href="#!contactus">CONTACT </a> </li> 
+</ul>
+</div>
+</div>
+..........................
+
+/*This code for menu bar*/
+.header{
+	background:#408080;
+	height:100px;
+	width:100%;	
+}
+.menubar ul li
+{
+width:160px;
+float:left;
+font-size:20px;
+text-weight:bold;
+height:40px;
+text-align:center;
+}
+
+a{
+text-decoration: none;
+color:#000000;
+font-weight: bold;
+}
+
+.menubar ul ul{
+	display:none;
+}
+.menubar ul {
+	list-style:none;
+	float:right;	
+	margin-top:30px;
+	padding:0;
+}
+.menubar ul li:hover ul {
+	display:block;	
+	visibility:visible;
+	z-index:100;
+	position:relative;	
+	margin:0;
+	background:#408080;
+}
+
+.menubar ul li:hover{
+	background-color:#ffffff;
+}

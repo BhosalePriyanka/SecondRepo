@@ -1,0 +1,71 @@
+.show-menu-btn {
+float:right;
+margin-left:10px;
+}
+.show-menu-btn i{
+	line-height:80px;
+}
+
+.show-menu-btn, .hide-menu-btn{
+	font-size:20px;
+	cursor:pointer;
+	transition:0.4s;
+	
+}
+
+#chk{
+visibility:hidden;
+position:absolute;
+z-index:-1111;
+}
+
+@media screen and (max-width:1800px){
+	#chk {
+	display:block;
+	}
+	
+	.menubar{
+	position:fixed;
+	width:100%;
+	height:100vh;
+	background:#0080ff;	
+	}
+	
+	.menubar ul li a{
+	display:block;
+	width:100%;
+
+	}
+}
+
+
+<label for="chk" class="hide-menu-btn">
+<i class="fas fa-times"></i>
+</label>
+
+,,,,,,,,,,,,,,,,,,,,,,,,,,
+.chk-btn{
+	font-size:30px;
+	float:right;
+	cursor:pointer;
+	display:none;
+}
+ #chk{
+ display:none;
+ }
+ 
+ @media screen and (max-width:1800px){
+ .chk-btn{
+ display:block;
+ }
+ .menubar {
+  position:fixed;
+ width:100%;
+ height:100vh;
+ background:grey;}
+ 
+ .menubar ul li{
+ display:block;}
+ }
+ 
+ 

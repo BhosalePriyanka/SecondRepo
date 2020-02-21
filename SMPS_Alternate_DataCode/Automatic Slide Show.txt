@@ -1,0 +1,72 @@
+HTML...........................................
+<!DOCTYPE html>
+<html>
+<head>
+<link rel= "stylesheet" href= "/css/slider.css" type="text/css"/>
+<title> SMPS Consultancy Ltd </title>
+</head>
+<body>
+div class="container">
+		<div class="slider">
+		   	
+		   				<div>
+						<img src="/Image/Image1.jpg">
+						</div>
+		   		
+						<div>
+							<img src="/Image/Image2.jpg">
+						</div>
+			
+						<div>
+							<img src="/Image/Image3.jpg">
+						</div>
+			
+						<div>
+							<img src="/Image/Image4.jpg">
+					    </div>
+		</div>
+		   		
+</div>
+</body>
+</html>
+
+
+CSS..........................................
+
+/*This code for image slider*/
+
+.slider img{
+float:left;
+width:25%;
+height:500px;
+}
+.container{
+	width:100%;
+	max-width:1700px;
+  	height:500px;
+	overflow:hidden;
+	border:5px solid black;
+	margin:auto;
+}
+
+@keyframes priyanka{
+	0%{left:0%;}
+	24%{left:0%;}
+	25%{left:-100%;}
+	49%{left:-100%;}
+	50%{left:-200%;}
+	74%{left:-200%;}
+	75%{left:-300%;}
+	99.99%{left:-300%;}
+	100%{left:0%;}
+}
+
+.slider{	
+	position:relative;
+	width:400%;
+	animation: priyanka linear 20s infinite;
+}
+.slide{
+	width:100%;
+	position:relative;
+}
